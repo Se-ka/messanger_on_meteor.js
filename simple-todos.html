@@ -3,12 +3,52 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
+
+<div class="panel-body">
+        <div class="form-group ">
+            <div class="controls">
+                <div class="input-group input-group-append">
+                    <input class=" form-control"
+                           id="login-email"
+                           name="login-email"
+                           placeholder="E-mail"
+                           type="text"
+                           value="">
+                    <span class="input-group-addon">
+                        <i class="icon required"></i>
+                    </span></div>
+            </div>
+        </div>
+        <div class="form-group ">
+            <div class="controls">
+                <div class="input-group input-group-append">
+                    <input class=" form-control"
+                           id="login-password"
+                           name="login-password"
+                           placeholder="Password"
+                           type="password"
+                           value="">
+              <span class="input-group-addon">
+                  <i class="icon required"></i>
+              </span>
+                </div>
+            </div>
+        </div>
+        <div class="btnset text-center">
+            <div class="form-group">
+                <div class="controls">
+                    <input class="btn btn-md btn-primary btn-login"
+                           id="login-submit"
+                           name="login-submit"
+                           type="submit"
+                           value="Log in">
+                </div>
+            </div>
+        </div>
+</div>
+
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+
